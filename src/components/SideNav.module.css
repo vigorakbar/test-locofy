@@ -1,0 +1,174 @@
+.menuIcon {
+  height: 10px;
+  width: 15.6px;
+  position: relative;
+}
+.menuLabel {
+  align-self: stretch;
+  width: 99px;
+  position: relative;
+  display: inline-block;
+}
+.overviewMenu,
+.overviewMenuWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.overviewMenu {
+  flex: 1;
+  gap: 20px;
+}
+.overviewMenuWrapper {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  background: linear-gradient(180.89deg, #fd749b, #281ac8);
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 0 var(--Space-600) 0 55px;
+  box-sizing: border-box;
+}
+.menuIcon1 {
+  height: 13.1px;
+  width: 14.6px;
+  position: relative;
+}
+.dividerSpacer {
+  width: 14px;
+  position: relative;
+  letter-spacing: -0.43px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.counter,
+.tradeMenuWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+.counter {
+  height: 20px;
+  width: 21px;
+  border-radius: var(--Corner-Full);
+  background: linear-gradient(178.18deg, #fd749b, #281ac8);
+  justify-content: center;
+  padding: 4px 3px;
+  text-align: center;
+  font-size: 8px;
+}
+.tradeMenuWrapper {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  justify-content: flex-start;
+  padding: 0 var(--Space-600) 0 55px;
+}
+.menuIcon2 {
+  height: 11px;
+  width: 15.3px;
+  position: relative;
+}
+.walletMenuWrapper {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 0 28px 28px 0;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--Space-600) 0 55px;
+  box-sizing: border-box;
+}
+.menuIcon3 {
+  height: 15.8px;
+  width: 16px;
+  position: relative;
+}
+.menuLabel3 {
+  align-self: stretch;
+  width: 139px;
+  position: relative;
+  display: inline-block;
+}
+.transactionMenu,
+.transactionMenuWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.transactionMenu {
+  flex: 1;
+  align-items: flex-start;
+  gap: 20px;
+}
+.transactionMenuWrapper {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 0 28px 28px 0;
+  align-items: center;
+  padding: 0 var(--Space-600) 0 55px;
+  box-sizing: border-box;
+}
+.menuIcon4 {
+  height: 17.3px;
+  width: 10.3px;
+  position: relative;
+}
+.statisticMenuWrapper {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--Space-600) 0 55px;
+  box-sizing: border-box;
+}
+.menuIcon5 {
+  height: 13.8px;
+  width: 16px;
+}
+.menuIcon5,
+.referral {
+  position: relative;
+}
+.bottomMenu,
+.sideNav {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bottomMenu {
+  padding: 76px 0 76px 126px;
+  gap: 29px;
+  font-size: 14px;
+}
+.sideNav {
+  width: 284px;
+  background-color: #1e0338;
+  border-right: 2px solid #f0f0f0;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 42px var(--Space-400) 0 0;
+  gap: var(--Space-300);
+  text-align: left;
+  font-size: 12px;
+  color: #fff;
+  font-family: Poppins;
+}
+@media screen and (max-width: 1050px) {
+  .sideNav {
+    display: none;
+  }
+}

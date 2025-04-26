@@ -1,0 +1,56 @@
+.campaignsManagement {
+  position: relative;
+  white-space: pre-wrap;
+}
+.triangleIcon {
+  position: absolute;
+  height: 27.78%;
+  width: 4.46%;
+  top: 44.44%;
+  right: 0;
+  bottom: 27.78%;
+  left: 95.54%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.accounts,
+.nikeS24 {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 0;
+}
+.nikeS24 {
+  left: 43.11%;
+  text-align: left;
+}
+.frameChild {
+  position: absolute;
+  height: 72.22%;
+  width: 1.49%;
+  top: 11.11%;
+  right: 63.33%;
+  bottom: 16.67%;
+  left: 35.18%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.triangleParent {
+  height: 18px;
+  width: 201.8px;
+  position: relative;
+  text-align: center;
+}
+.mainContentNav {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  text-align: left;
+  font-size: 12px;
+  color: #fff;
+  font-family: Poppins;
+}

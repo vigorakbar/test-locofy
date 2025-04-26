@@ -1,0 +1,22 @@
+.overview {
+  width: 99px;
+  position: relative;
+  display: inline-block;
+}
+.groupIcon {
+  height: 19.2px;
+  width: 18.3px;
+  position: relative;
+}
+.mainContentTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: Poppins;
+}

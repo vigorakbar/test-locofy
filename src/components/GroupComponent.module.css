@@ -1,0 +1,41 @@
+.name {
+  width: 84.5px;
+  position: relative;
+  line-height: 17px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.agentMessageName {
+  width: 325.9px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.agentMessageContent,
+.agentMessageNameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: Poppins;
+}
+.agentMessageContent {
+  width: 325.9px;
+  border: 0;
+  outline: 0;
+  background-color: #f6f6f6;
+  height: 48px;
+  border-radius: 10px;
+  flex-direction: row;
+  padding: 14px 12px 12px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #858585;
+}
+.agentMessageNameParent {
+  flex-direction: column;
+  gap: 11px;
+  text-align: left;
+  font-size: 10px;
+  color: #fff;
+}

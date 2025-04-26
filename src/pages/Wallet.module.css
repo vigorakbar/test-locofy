@@ -1,0 +1,332 @@
+.menuIcon {
+  height: 10px;
+  width: 15.6px;
+  position: relative;
+}
+.menuLabel {
+  align-self: stretch;
+  width: 99px;
+  position: relative;
+  display: inline-block;
+}
+.overviewMenu,
+.overviewMenuWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.overviewMenu {
+  flex: 1;
+  gap: 20px;
+}
+.overviewMenuWrapper {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 0 25px 0 55px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.menuIcon1 {
+  height: 13.1px;
+  width: 14.6px;
+  position: relative;
+}
+.counterValue {
+  width: 14px;
+  position: relative;
+  letter-spacing: -0.43px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.counter,
+.tradeMenuWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+.counter {
+  height: 20px;
+  width: 21px;
+  border-radius: var(--Corner-Full);
+  background: linear-gradient(178.18deg, #fd749b, #281ac8);
+  justify-content: center;
+  padding: 4px 3px;
+  text-align: center;
+  font-size: 8px;
+}
+.tradeMenuWrapper {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  justify-content: flex-start;
+  padding: 0 25px 0 55px;
+  cursor: pointer;
+}
+.menuIcon2 {
+  height: 11px;
+  width: 15.3px;
+  position: relative;
+}
+.walletMenuWrapper {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 0 28px 28px 0;
+  background: linear-gradient(180.89deg, #fd749b, #281ac8);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--Space-600) 0 55px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.menuIcon3 {
+  height: 15.8px;
+  width: 16px;
+  position: relative;
+}
+.menuLabel3 {
+  align-self: stretch;
+  width: 139px;
+  position: relative;
+  display: inline-block;
+}
+.transactionMenu,
+.transactionMenuWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.transactionMenu {
+  flex: 1;
+  align-items: flex-start;
+  gap: 20px;
+}
+.transactionMenuWrapper {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 0 28px 28px 0;
+  align-items: center;
+  padding: 0 25px 0 55px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.menuIcon4 {
+  height: 17.3px;
+  width: 10.3px;
+  position: relative;
+}
+.statisticMenuWrapper {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 25px 0 55px;
+  box-sizing: border-box;
+}
+.menuIcon5 {
+  height: 13.8px;
+  width: 16px;
+}
+.menuIcon5,
+.referral {
+  position: relative;
+}
+.bottomMenu,
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bottomMenu {
+  align-self: stretch;
+  padding: 76px 1px 76px 126px;
+  gap: 29px;
+  font-size: 14px;
+}
+.sideNav {
+  height: 2426px;
+  width: 284px;
+  background-color: #1e0338;
+  border-right: 2px solid #f0f0f0;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 42px 14px 0 0;
+  gap: var(--Space-300);
+}
+.campaignsManagement {
+  position: relative;
+  white-space: pre-wrap;
+}
+.accounts {
+  width: 59px;
+  position: relative;
+  display: inline-block;
+}
+.accountsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 6px 0 0;
+}
+.frameChild {
+  width: 3px;
+  height: 13px;
+  position: relative;
+}
+.vectorWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 7px 0 0;
+}
+.nikeS24 {
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+.triangleIcon {
+  width: 9px;
+  height: 5px;
+  position: relative;
+}
+.triangleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0 0;
+}
+.frameParent,
+.mainContentNav {
+  display: flex;
+  flex-direction: row;
+}
+.frameParent {
+  height: 18px;
+  width: 201.8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5.8px;
+  text-align: center;
+}
+.mainContentNav {
+  align-self: stretch;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+.wallet2 {
+  width: 99px;
+  position: relative;
+  display: inline-block;
+}
+.mainContentTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.mainContent {
+  width: 1024px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 45px 0;
+  box-sizing: border-box;
+  gap: 40px;
+  max-width: 1024px;
+}
+.body,
+.contentContainer {
+  flex: 1;
+  flex-direction: row;
+}
+.contentContainer {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.body {
+  width: 1500px;
+}
+.body,
+.wallet,
+.wallet1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.wallet1 {
+  height: 735px;
+  flex-direction: column;
+  max-width: 100%;
+  text-align: left;
+  font-size: 12px;
+  color: #fff;
+  font-family: Poppins;
+}
+.wallet {
+  position: relative;
+  background-color: #1e0338;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 0 1px;
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1025px) {
+  .mainContent {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 725px) {
+  .mainContent,
+  .sideNav {
+    padding-top: 27px;
+    box-sizing: border-box;
+  }
+  .mainContent {
+    gap: 20px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .overviewMenuWrapper,
+  .statisticMenuWrapper,
+  .tradeMenuWrapper,
+  .transactionMenuWrapper,
+  .walletMenuWrapper {
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  .mainContentNav {
+    flex-wrap: wrap;
+  }
+}

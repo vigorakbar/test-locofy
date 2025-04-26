@@ -1,0 +1,95 @@
+.firstRowData {
+  position: relative;
+}
+.tableCol1 {
+  width: 94px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.secondRowData {
+  position: relative;
+  line-height: 180%;
+}
+.tableCol2 {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.tableCol3 {
+  width: 60px;
+  max-height: 100%;
+}
+.bitcoin {
+  position: relative;
+  line-height: 163.42%;
+}
+.tableCol4,
+.tableCol5 {
+  width: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.tableCol5 {
+  width: 60px;
+}
+.buttonLabel {
+  flex: 1;
+  position: relative;
+}
+.tableButton,
+.tableCol7 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tableButton {
+  height: 27px;
+  border-radius: 215px;
+  background-color: #5df888;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  min-width: 91px;
+}
+.tableCol7 {
+  width: 112px;
+  text-align: center;
+}
+.tableCol8 {
+  width: 64px;
+  max-height: 100%;
+}
+.tableRow1 {
+  align-self: stretch;
+  height: 65px;
+  border-radius: 100px;
+  border: 2px solid #f0f0f0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  text-align: left;
+  font-size: 12px;
+  color: #fff;
+  font-family: Poppins;
+}
+@media screen and (max-width: 750px) {
+  .tableRow1 {
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
