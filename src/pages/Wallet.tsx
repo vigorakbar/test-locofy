@@ -25,8 +25,8 @@ const Wallet: FunctionComponent = () => {
 
   return (
     <div className={styles.wallet}>
-      <section className={styles.wallet1}>
-        <Header headerAlignSelf="unset" headerWidth="1500px" />
+      <div className={styles.wallet1}>
+        <Header />
         <div className={styles.body}>
           <div className={styles.sideNav}>
             <div
@@ -34,12 +34,7 @@ const Wallet: FunctionComponent = () => {
               onClick={onOverviewMenuWrapperClick}
             >
               <div className={styles.overviewMenu}>
-                <img
-                  className={styles.menuIcon}
-                  loading="lazy"
-                  alt=""
-                  src="/menu-icon.svg"
-                />
+                <img className={styles.menuIcon} alt="" src="/menu-icon.svg" />
                 <div className={styles.menuLabel}>Overview</div>
               </div>
             </div>
@@ -50,14 +45,13 @@ const Wallet: FunctionComponent = () => {
               <div className={styles.overviewMenu}>
                 <img
                   className={styles.menuIcon1}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-1.svg"
                 />
                 <div className={styles.menuLabel}>Trade</div>
               </div>
               <div className={styles.counter}>
-                <b className={styles.counterValue}>19</b>
+                <b className={styles.b}>19</b>
               </div>
             </div>
             <div
@@ -67,7 +61,6 @@ const Wallet: FunctionComponent = () => {
               <div className={styles.overviewMenu}>
                 <img
                   className={styles.menuIcon2}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-2.svg"
                 />
@@ -81,21 +74,19 @@ const Wallet: FunctionComponent = () => {
               <div className={styles.transactionMenu}>
                 <img
                   className={styles.menuIcon3}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-3.svg"
                 />
                 <div className={styles.menuLabel3}>Transactions</div>
               </div>
               <div className={styles.counter}>
-                <b className={styles.counterValue}>19</b>
+                <b className={styles.b}>19</b>
               </div>
             </div>
             <div className={styles.statisticMenuWrapper}>
               <div className={styles.transactionMenu}>
                 <img
                   className={styles.menuIcon4}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-4.svg"
                 />
@@ -106,7 +97,6 @@ const Wallet: FunctionComponent = () => {
               <div className={styles.overviewMenu}>
                 <img
                   className={styles.menuIcon5}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-5.svg"
                 />
@@ -124,27 +114,19 @@ const Wallet: FunctionComponent = () => {
                 <b className={styles.campaignsManagement}>
                   User Management Wallet
                 </b>
-                <div className={styles.frameParent}>
-                  <div className={styles.accountsWrapper}>
-                    <b className={styles.accounts}>Accounts</b>
-                  </div>
-                  <div className={styles.vectorWrapper}>
-                    <img
-                      className={styles.frameChild}
-                      loading="lazy"
-                      alt=""
-                      src="/line-22.svg"
-                    />
-                  </div>
+                <div className={styles.triangleParent}>
+                  <img
+                    className={styles.triangleIcon}
+                    alt=""
+                    src="/triangle.svg"
+                  />
+                  <b className={styles.accounts}>Accounts</b>
                   <b className={styles.nikeS24}>RAMON RIDWAN</b>
-                  <div className={styles.triangleWrapper}>
-                    <img
-                      className={styles.triangleIcon}
-                      loading="lazy"
-                      alt=""
-                      src="/triangle.svg"
-                    />
-                  </div>
+                  <img
+                    className={styles.groupChild}
+                    alt=""
+                    src="/line-22.svg"
+                  />
                 </div>
               </div>
               <div className={styles.mainContentTitle}>
@@ -160,7 +142,7 @@ const Wallet: FunctionComponent = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

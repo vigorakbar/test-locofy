@@ -1,49 +1,22 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { FunctionComponent } from "react";
 import styles from "./Header.module.css";
 
 export type HeaderType = {
   className?: string;
-
-  /** Style props */
-  headerAlignSelf?: CSSProperties["alignSelf"];
-  headerWidth?: CSSProperties["width"];
 };
 
-const Header: FunctionComponent<HeaderType> = ({
-  className = "",
-  headerAlignSelf,
-  headerWidth,
-}) => {
-  const headerStyle: CSSProperties = useMemo(() => {
-    return {
-      alignSelf: headerAlignSelf,
-      width: headerWidth,
-    };
-  }, [headerAlignSelf, headerWidth]);
-
+const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
   return (
-    <header
-      className={[styles.header, className].join(" ")}
-      style={headerStyle}
-    >
+    <div className={[styles.header, className].join(" ")}>
       <div className={styles.headerLogo}>
         <img className={styles.path185Icon} alt="" src="/path18-5.svg" />
-        <img
-          className={styles.coinbaseIcon}
-          loading="lazy"
-          alt=""
-          src="/coinbase.svg"
-        />
+        <img className={styles.coinbaseIcon} alt="" src="/coinbase.svg" />
         <img className={styles.bitcoin1Icon} alt="" src="/bitcoin-1.svg" />
       </div>
       <div className={styles.headerInfo}>
         <div className={styles.searchBar}>
           <img className={styles.searchIcon} alt="" src="/searchicon.svg" />
-          <input
-            className={styles.placeholder}
-            placeholder="Search e.g card"
-            type="text"
-          />
+          <div className={styles.placeholder}>Search e.g card</div>
         </div>
         <div className={styles.user}>
           <div className={styles.profilePicture} />
@@ -57,7 +30,7 @@ const Header: FunctionComponent<HeaderType> = ({
           </div>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

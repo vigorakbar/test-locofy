@@ -32,15 +32,14 @@ const Wallet1: FunctionComponent<Wallet1Type> = ({
       <div className={styles.content}>
         <div className={styles.sectionTitle}>
           <b className={styles.title}>Wallet</b>
-          <button className={styles.buttonAction}>
-            <div className={styles.buttonBackground} />
+          <div className={styles.buttonAction}>
+            <div className={styles.buttonActionChild} />
             <div className={styles.withdrawFunds}>Withdraw Funds</div>
-          </button>
+          </div>
         </div>
         <div className={styles.sectionBody}>
           <img
             className={styles.walletLogoContainer}
-            loading="lazy"
             alt=""
             src={walletLogoContainer}
           />

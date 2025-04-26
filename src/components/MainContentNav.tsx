@@ -17,7 +17,7 @@ const MainContentNav: FunctionComponent<MainContentNavType> = ({
         <img className={styles.triangleIcon} alt="" src="/triangle.svg" />
         <b className={styles.accounts}>Accounts</b>
         <b className={styles.nikeS24}>RAMON RIDWAN</b>
-        <img className={styles.frameChild} alt="" src="/line-22.svg" />
+        <img className={styles.groupChild} alt="" src="/line-22.svg" />
       </div>
     </div>
   );

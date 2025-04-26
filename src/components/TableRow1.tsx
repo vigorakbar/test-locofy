@@ -51,12 +51,12 @@ const TableRow1: FunctionComponent<TableRow1Type> = ({
       style={tableRow1Style}
     >
       <div className={styles.tableCol1} style={tableCol1Style}>
-        <div className={styles.firstRowData}>14/01/2019</div>
+        <div className={styles.div}>14/01/2019</div>
       </div>
       <div className={styles.tableCol2}>
-        <div className={styles.secondRowData}>12345678</div>
+        <div className={styles.div1}>12345678</div>
       </div>
-      <img className={styles.tableCol3} loading="lazy" alt="" src={tableCol3} />
+      <img className={styles.tableCol3} alt="" src={tableCol3} />
       <div className={styles.tableCol4}>
         <div className={styles.bitcoin}>{bitcoin}</div>
       </div>
@@ -71,7 +71,7 @@ const TableRow1: FunctionComponent<TableRow1Type> = ({
           <b className={styles.buttonLabel}>{buttonLabel}</b>
         </div>
       </div>
-      <img className={styles.tableCol8} loading="lazy" alt="" src={tableCol8} />
+      <img className={styles.tableCol8} alt="" src={tableCol8} />
     </div>
   );
 };

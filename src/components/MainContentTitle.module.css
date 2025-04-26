@@ -2,11 +2,13 @@
   width: 99px;
   position: relative;
   display: inline-block;
+  height: 23px;
+  flex-shrink: 0;
 }
 .groupIcon {
-  height: 19.2px;
   width: 18.3px;
   position: relative;
+  height: 19.2px;
 }
 .mainContentTitle {
   align-self: stretch;

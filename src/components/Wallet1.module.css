@@ -2,8 +2,10 @@
   width: 55px;
   position: relative;
   display: inline-block;
+  height: 23px;
+  flex-shrink: 0;
 }
-.buttonBackground {
+.buttonActionChild {
   position: absolute;
   top: 0;
   right: 0;
@@ -16,21 +18,18 @@
   position: absolute;
   top: 13px;
   right: 27px;
-  font-size: 10px;
-  font-family: Poppins;
   background: linear-gradient(178.18deg, #fd749b, #281ac8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: left;
+  display: inline-block;
+  width: 81px;
+  height: 17px;
 }
 .buttonAction {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  height: 42px;
   width: 134px;
   position: relative;
+  height: 42px;
+  font-size: 10px;
 }
 .sectionTitle {
   align-self: stretch;
@@ -49,11 +48,13 @@
   width: 86px;
   position: relative;
   display: inline-block;
+  height: 15px;
+  flex-shrink: 0;
 }
 .infoTitle {
-  height: 27px;
   border-radius: 215px;
   background: linear-gradient(138.71deg, #fc58b3, #feae68);
+  height: 27px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -65,13 +66,15 @@
 .total {
   width: 220px;
   position: relative;
-  line-height: 34px;
   display: inline-block;
+  height: 34px;
+  flex-shrink: 0;
 }
 .description {
   width: 255px;
   font-size: 12px;
   line-height: 163.42%;
+  height: 37px;
 }
 .infoContainer {
   align-self: stretch;
@@ -91,11 +94,13 @@
   width: 51px;
   position: relative;
   display: inline-block;
+  height: 15px;
+  flex-shrink: 0;
 }
 .infoTitle1 {
-  height: 27px;
   border-radius: 215px;
   background: linear-gradient(138.71deg, #fc58b3, #feae68);
+  height: 27px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -138,7 +143,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
 }
 .content,
 .sectionBody {
@@ -184,11 +189,11 @@
 }
 .wallet {
   align-self: stretch;
-  height: 326px;
   border-radius: 10px;
   background-color: #1e0338;
   border: 2px solid #f0f0f0;
   box-sizing: border-box;
+  height: 326px;
   display: flex;
   flex-direction: column;
   align-items: center;

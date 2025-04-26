@@ -16,7 +16,7 @@ const GroupComponent: FunctionComponent<GroupComponentType> = ({
   nameWidth,
   nameColor,
 }) => {
-  const name1Style: CSSProperties = useMemo(() => {
+  const nameStyle: CSSProperties = useMemo(() => {
     return {
       width: nameWidth,
       color: nameColor,
@@ -24,17 +24,14 @@ const GroupComponent: FunctionComponent<GroupComponentType> = ({
   }, [nameWidth, nameColor]);
 
   return (
-    <div className={[styles.agentMessageNameParent, className].join(" ")}>
-      <div className={styles.agentMessageName}>
-        <div className={styles.name} style={name1Style}>
-          {name1}
-        </div>
+    <div className={[styles.bgParent, className].join(" ")}>
+      <div className={styles.bg} />
+      <div className={styles.text}>
+        Yes we currently run both on our platform here
       </div>
-      <input
-        className={styles.agentMessageContent}
-        placeholder="Yes we currently run both on our platform here"
-        type="text"
-      />
+      <div className={styles.name} style={nameStyle}>
+        {name1}
+      </div>
     </div>
   );
 };

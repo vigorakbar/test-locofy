@@ -24,7 +24,7 @@
   left: 43.11%;
   text-align: left;
 }
-.frameChild {
+.groupChild {
   position: absolute;
   height: 72.22%;
   width: 1.49%;
@@ -35,11 +35,12 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
+  mix-blend-mode: normal;
 }
 .triangleParent {
-  height: 18px;
   width: 201.8px;
   position: relative;
+  height: 18px;
   text-align: center;
 }
 .mainContentNav {

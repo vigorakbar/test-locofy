@@ -1,13 +1,14 @@
 .menuIcon {
-  height: 10px;
   width: 15.6px;
   position: relative;
+  height: 10px;
 }
 .menuLabel {
   align-self: stretch;
   width: 99px;
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
 }
 .overviewMenu,
 .overviewMenuWrapper {
@@ -22,22 +23,25 @@
 }
 .overviewMenuWrapper {
   align-self: stretch;
-  height: 54px;
   border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
   background: linear-gradient(180.89deg, #fd749b, #281ac8);
+  height: 54px;
   overflow: hidden;
   flex-shrink: 0;
   padding: 0 var(--Space-600) 0 55px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+.b,
+.menuIcon1 {
+  position: relative;
 }
 .menuIcon1 {
-  height: 13.1px;
   width: 14.6px;
-  position: relative;
+  height: 13.1px;
 }
-.dividerSpacer {
+.b {
   width: 14px;
-  position: relative;
   letter-spacing: -0.43px;
   display: inline-block;
   flex-shrink: 0;
@@ -50,10 +54,10 @@
   box-sizing: border-box;
 }
 .counter {
-  height: 20px;
   width: 21px;
   border-radius: var(--Corner-Full);
   background: linear-gradient(178.18deg, #fd749b, #281ac8);
+  height: 20px;
   justify-content: center;
   padding: 4px 3px;
   text-align: center;
@@ -61,20 +65,21 @@
 }
 .tradeMenuWrapper {
   align-self: stretch;
-  height: 54px;
   border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  height: 54px;
   justify-content: flex-start;
   padding: 0 var(--Space-600) 0 55px;
+  cursor: pointer;
 }
 .menuIcon2 {
-  height: 11px;
   width: 15.3px;
   position: relative;
+  height: 11px;
 }
 .walletMenuWrapper {
   align-self: stretch;
-  height: 54px;
   border-radius: 0 28px 28px 0;
+  height: 54px;
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
@@ -83,17 +88,19 @@
   justify-content: flex-start;
   padding: 0 var(--Space-600) 0 55px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .menuIcon3 {
-  height: 15.8px;
   width: 16px;
   position: relative;
+  height: 15.8px;
 }
 .menuLabel3 {
   align-self: stretch;
   width: 139px;
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
 }
 .transactionMenu,
 .transactionMenuWrapper {
@@ -108,21 +115,22 @@
 }
 .transactionMenuWrapper {
   align-self: stretch;
-  height: 54px;
   border-radius: 0 28px 28px 0;
+  height: 54px;
   align-items: center;
   padding: 0 var(--Space-600) 0 55px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .menuIcon4 {
-  height: 17.3px;
   width: 10.3px;
   position: relative;
+  height: 17.3px;
 }
 .statisticMenuWrapper {
   align-self: stretch;
-  height: 54px;
   border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  height: 54px;
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
@@ -133,8 +141,8 @@
   box-sizing: border-box;
 }
 .menuIcon5 {
-  height: 13.8px;
   width: 16px;
+  height: 13.8px;
 }
 .menuIcon5,
 .referral {
@@ -166,9 +174,4 @@
   font-size: 12px;
   color: #fff;
   font-family: Poppins;
-}
-@media screen and (max-width: 1050px) {
-  .sideNav {
-    display: none;
-  }
 }

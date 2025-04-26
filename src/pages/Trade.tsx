@@ -1,84 +1,110 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useCallback } from "react";
 import Header from "../components/Header";
+import { useNavigate } from "react-router-dom";
 import MainContentNav from "../components/MainContentNav";
 import MainContentTitle from "../components/MainContentTitle";
-import MessageList from "../components/MessageList";
 import GroupComponent from "../components/GroupComponent";
 import styles from "./Trade.module.css";
 
 const Trade: FunctionComponent = () => {
+  const navigate = useNavigate();
+
+  const onOverviewMenuWrapperClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+
+  const onTradeMenuWrapperClick = useCallback(() => {
+    const anchor = document.querySelector(
+      "[data-scroll-to='tradeMenuWrapper']"
+    );
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start" });
+    }
+  }, []);
+
+  const onWalletMenuWrapperClick = useCallback(() => {
+    navigate("/wallet");
+  }, [navigate]);
+
+  const onTransactionMenuWrapperClick = useCallback(() => {
+    navigate("/transaction");
+  }, [navigate]);
+
   return (
     <div className={styles.trade}>
-      <main className={styles.trade1}>
-        <Header headerAlignSelf="unset" headerWidth="1500px" />
-        <section className={styles.body}>
+      <div className={styles.trade1}>
+        <Header />
+        <div className={styles.body}>
           <div className={styles.sideNav}>
-            <div className={styles.overviewMenuWrapper}>
+            <div
+              className={styles.overviewMenuWrapper}
+              onClick={onOverviewMenuWrapperClick}
+            >
               <div className={styles.overviewMenu}>
-                <img
-                  className={styles.menuIcon}
-                  loading="lazy"
-                  alt=""
-                  src="/menu-icon.svg"
-                />
+                <img className={styles.menuIcon} alt="" src="/menu-icon.svg" />
                 <div className={styles.menuLabel}>Overview</div>
               </div>
             </div>
-            <div className={styles.tradeMenuWrapper}>
+            <div
+              className={styles.tradeMenuWrapper}
+              data-scroll-to="tradeMenuWrapper"
+              onClick={onTradeMenuWrapperClick}
+            >
               <div className={styles.overviewMenu}>
                 <img
                   className={styles.menuIcon1}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-1.svg"
                 />
                 <div className={styles.menuLabel}>Trade</div>
               </div>
               <div className={styles.counter}>
-                <b className={styles.counterValue}>19</b>
+                <b className={styles.b}>19</b>
               </div>
             </div>
-            <div className={styles.walletMenuWrapper}>
+            <div
+              className={styles.walletMenuWrapper}
+              onClick={onWalletMenuWrapperClick}
+            >
               <div className={styles.overviewMenu}>
                 <img
                   className={styles.menuIcon2}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-2.svg"
                 />
                 <div className={styles.menuLabel}>Wallet</div>
               </div>
             </div>
-            <div className={styles.transactionMenuWrapper}>
+            <div
+              className={styles.transactionMenuWrapper}
+              onClick={onTransactionMenuWrapperClick}
+            >
               <div className={styles.transactionMenu}>
                 <img
                   className={styles.menuIcon3}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-3.svg"
                 />
                 <div className={styles.menuLabel3}>Transactions</div>
               </div>
               <div className={styles.counter1}>
-                <b className={styles.b}>19</b>
+                <b className={styles.b1}>19</b>
               </div>
             </div>
-            <div className={styles.overviewMenuWrapper}>
+            <div className={styles.statisticMenuWrapper}>
               <div className={styles.transactionMenu}>
                 <img
                   className={styles.menuIcon4}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-4.svg"
                 />
                 <div className={styles.menuLabel3}>Statistics</div>
               </div>
             </div>
-            <div className={styles.overviewMenuWrapper}>
+            <div className={styles.statisticMenuWrapper}>
               <div className={styles.overviewMenu}>
                 <img
                   className={styles.menuIcon5}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-5.svg"
                 />
@@ -108,15 +134,12 @@ const Trade: FunctionComponent = () => {
                         <div className={styles.userInfo}>
                           <img
                             className={styles.maskGroupIcon}
-                            loading="lazy"
                             alt=""
                             src="/mask-group.svg"
                           />
                           <div className={styles.userInfo1}>
                             <b className={styles.ramonRidwan}>Ramon Ridwan</b>
-                            <div className={styles.userStatus}>
-                              <div className={styles.online}>Online</div>
-                            </div>
+                            <div className={styles.online}>Online</div>
                           </div>
                         </div>
                       </div>
@@ -127,15 +150,12 @@ const Trade: FunctionComponent = () => {
                           <div className={styles.userInfo2}>
                             <img
                               className={styles.maskGroupIcon}
-                              loading="lazy"
                               alt=""
                               src="/mask-group.svg"
                             />
                             <div className={styles.userInfo1}>
-                              <b className={styles.agentRue}>Agent Rue</b>
-                              <div className={styles.userStatus}>
-                                <div className={styles.online}>Online</div>
-                              </div>
+                              <b className={styles.ramonRidwan}>Agent Rue</b>
+                              <div className={styles.online}>Online</div>
                             </div>
                           </div>
                           <div className={styles.chatIndicator}>
@@ -146,20 +166,17 @@ const Trade: FunctionComponent = () => {
                           <div className={styles.userInfo4}>
                             <img
                               className={styles.maskGroupIcon}
-                              loading="lazy"
                               alt=""
                               src="/mask-group-2.svg"
                             />
                             <div className={styles.userInfo1}>
-                              <b className={styles.agentRue}>Agent Rue</b>
-                              <div className={styles.userStatus}>
-                                <div className={styles.online}>Offline</div>
-                              </div>
+                              <b className={styles.ramonRidwan}>Agent Rue</b>
+                              <div className={styles.online}>Offline</div>
                             </div>
                           </div>
                           <div className={styles.chatIndicator1}>
                             <div className={styles.counter2}>
-                              <b className={styles.b}>10</b>
+                              <b className={styles.b1}>10</b>
                             </div>
                           </div>
                         </div>
@@ -167,20 +184,17 @@ const Trade: FunctionComponent = () => {
                           <div className={styles.userInfo2}>
                             <img
                               className={styles.maskGroupIcon}
-                              loading="lazy"
                               alt=""
                               src="/mask-group-2.svg"
                             />
                             <div className={styles.userInfo1}>
-                              <b className={styles.agentRue}>Agent Rue</b>
-                              <div className={styles.userStatus}>
-                                <div className={styles.online}>Offline</div>
-                              </div>
+                              <b className={styles.ramonRidwan}>Agent Rue</b>
+                              <div className={styles.online}>Offline</div>
                             </div>
                           </div>
                           <div className={styles.chatIndicator2}>
                             <div className={styles.counter2}>
-                              <b className={styles.b}>9</b>
+                              <b className={styles.b1}>9</b>
                             </div>
                           </div>
                         </div>
@@ -188,77 +202,70 @@ const Trade: FunctionComponent = () => {
                           <div className={styles.userInfo8}>
                             <img
                               className={styles.maskGroupIcon}
-                              loading="lazy"
                               alt=""
                               src="/mask-group-2.svg"
                             />
                             <div className={styles.userInfo1}>
-                              <b className={styles.agentRue}>Agent Rue</b>
-                              <div className={styles.userStatus}>
-                                <div className={styles.online}>Offline</div>
-                              </div>
+                              <b className={styles.ramonRidwan}>Agent Rue</b>
+                              <div className={styles.online}>Offline</div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className={styles.sidebarBottom}>
-                      <button className={styles.button}>
+                      <div className={styles.button}>
                         <div className={styles.buttonChild} />
                         <div className={styles.newTrade}>New Trade?</div>
-                      </button>
+                      </div>
                     </div>
                   </div>
                   <div className={styles.chatContainer}>
                     <div className={styles.chatPanel}>
-                      <div className={styles.chatMessages}>
-                        <MessageList name1="Me, 10.:22 " />
-                        <GroupComponent name1="Agent Rue, 10:24" />
+                      <div className={styles.uilinegrayParent}>
+                        <div className={styles.uilinegray}>
+                          <div className={styles.line} />
+                        </div>
+                        <b className={styles.unread}>Unread</b>
                       </div>
-                      <div className={styles.nextMessage}>
-                        <div className={styles.messageleft}>
-                          <div className={styles.name}>Me, 3 minutes ago</div>
-                          <input
-                            className={styles.nextUserContent}
-                            placeholder="Please, can you go into details bout the service"
-                            type="text"
-                          />
+                      <div className={styles.messageleft}>
+                        <div className={styles.bg} />
+                        <div className={styles.text}>
+                          Hello am new to this system can i get a breakdown on
+                          how it works?
+                        </div>
+                        <div className={styles.name}>{`Me, 10.:22 `}</div>
+                      </div>
+                      <div className={styles.messageleft1}>
+                        <div className={styles.bg1} />
+                        <div className={styles.text1}>
+                          Please, can you go into details bout the service
+                        </div>
+                        <div className={styles.name1}>Me, 3 minutes ago</div>
+                      </div>
+                      <GroupComponent name1="Agent Rue, 10:24" />
+                      <div className={styles.messageleft2}>
+                        <div className={styles.bg} />
+                        <div className={styles.text}>
+                          Hello am new to this system can i get a breakdown on
+                          how it works?
+                        </div>
+                        <div className={styles.name2}>
+                          Agent Rue, 9 minutes ago
                         </div>
                       </div>
-                      <div className={styles.previousMessages}>
-                        <div className={styles.previousMessageList}>
-                          <div className={styles.previousMessageHeaderParent}>
-                            <div className={styles.previousMessageHeader}>
-                              <b className={styles.unread}>Unread</b>
-                              <div className={styles.uilinegrayWrapper}>
-                                <div className={styles.uilinegray}>
-                                  <div className={styles.line} />
-                                </div>
-                              </div>
-                            </div>
-                            <MessageList
-                              messageListWidth="unset"
-                              messageListPadding="0px 14px"
-                              name1="Agent Rue, 9 minutes ago"
-                              nameWidth="131.4px"
-                            />
-                          </div>
-                        </div>
-                        <GroupComponent
-                          name1="Agent Rue, 9 minutes ago"
-                          nameWidth="133.4px"
-                          nameColor="#858585"
-                        />
-                      </div>
+                      <GroupComponent
+                        name1="Agent Rue, 9 minutes ago"
+                        nameWidth="40.93%"
+                        nameColor="#858585"
+                      />
                     </div>
                     <div className={styles.inputField}>
                       <div className={styles.inputElements}>
-                        <input
-                          className={styles.messageField}
-                          placeholder="Start typing here"
-                          type="text"
-                        />
-                        <div className={styles.sendButton}>
+                        <div className={styles.placeholder}>
+                          Start typing here
+                        </div>
+                        <div className={styles.path753Parent}>
                           <img
                             className={styles.path753Icon}
                             alt=""
@@ -276,8 +283,8 @@ const Trade: FunctionComponent = () => {
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
     </div>
   );
 };

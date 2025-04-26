@@ -27,21 +27,16 @@ const Transaction: FunctionComponent = () => {
 
   return (
     <div className={styles.transaction}>
-      <main className={styles.transaction1}>
-        <Header headerAlignSelf="unset" headerWidth="1500px" />
-        <section className={styles.body}>
+      <div className={styles.transaction1}>
+        <Header />
+        <div className={styles.body}>
           <div className={styles.sideNav}>
             <div
               className={styles.overviewMenuWrapper}
               onClick={onOverviewMenuWrapperClick}
             >
               <div className={styles.overviewMenu}>
-                <img
-                  className={styles.menuIcon}
-                  loading="lazy"
-                  alt=""
-                  src="/menu-icon.svg"
-                />
+                <img className={styles.menuIcon} alt="" src="/menu-icon.svg" />
                 <div className={styles.menuLabel}>Overview</div>
               </div>
             </div>
@@ -52,14 +47,13 @@ const Transaction: FunctionComponent = () => {
               <div className={styles.overviewMenu}>
                 <img
                   className={styles.menuIcon1}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-1.svg"
                 />
                 <div className={styles.menuLabel}>Trade</div>
               </div>
               <div className={styles.counter}>
-                <b className={styles.counterValue}>19</b>
+                <b className={styles.b}>19</b>
               </div>
             </div>
             <div
@@ -69,7 +63,6 @@ const Transaction: FunctionComponent = () => {
               <div className={styles.overviewMenu}>
                 <img
                   className={styles.menuIcon2}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-2.svg"
                 />
@@ -83,21 +76,19 @@ const Transaction: FunctionComponent = () => {
               <div className={styles.transactionMenu}>
                 <img
                   className={styles.menuIcon3}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-3.svg"
                 />
                 <div className={styles.menuLabel3}>Transactions</div>
               </div>
               <div className={styles.counter1}>
-                <b className={styles.b}>19</b>
+                <b className={styles.b1}>19</b>
               </div>
             </div>
             <div className={styles.statisticMenuWrapper}>
               <div className={styles.transactionMenu}>
                 <img
                   className={styles.menuIcon4}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-4.svg"
                 />
@@ -108,7 +99,6 @@ const Transaction: FunctionComponent = () => {
               <div className={styles.overviewMenu}>
                 <img
                   className={styles.menuIcon5}
-                  loading="lazy"
                   alt=""
                   src="/menu-icon-5.svg"
                 />
@@ -249,17 +239,17 @@ const Transaction: FunctionComponent = () => {
                     </div>
                   </div>
                   <div className={styles.sectionFooter}>
-                    <button className={styles.button}>
+                    <div className={styles.button}>
                       <div className={styles.buttonChild} />
                       <div className={styles.viewMore}>View More</div>
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
     </div>
   );
 };

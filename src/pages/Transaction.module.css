@@ -1,13 +1,14 @@
 .menuIcon {
-  height: 10px;
   width: 15.6px;
   position: relative;
+  height: 10px;
 }
 .menuLabel {
   align-self: stretch;
   width: 99px;
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
 }
 .overviewMenu,
 .overviewMenuWrapper {
@@ -22,22 +23,24 @@
 }
 .overviewMenuWrapper {
   align-self: stretch;
-  height: 54px;
   border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  height: 54px;
   overflow: hidden;
   flex-shrink: 0;
-  padding: 0 25px 0 55px;
+  padding: 0 var(--Space-600) 0 55px;
   box-sizing: border-box;
   cursor: pointer;
 }
+.b,
 .menuIcon1 {
-  height: 13.1px;
-  width: 14.6px;
   position: relative;
 }
-.counterValue {
+.menuIcon1 {
+  width: 14.6px;
+  height: 13.1px;
+}
+.b {
   width: 14px;
-  position: relative;
   letter-spacing: -0.43px;
   line-height: 14px;
   display: flex;
@@ -53,10 +56,10 @@
   box-sizing: border-box;
 }
 .counter {
-  height: 20px;
   width: 21px;
   border-radius: var(--Corner-Full);
   background: linear-gradient(178.18deg, #fd749b, #281ac8);
+  height: 20px;
   justify-content: center;
   padding: 4px 3px;
   text-align: center;
@@ -64,41 +67,42 @@
 }
 .tradeMenuWrapper {
   align-self: stretch;
-  height: 54px;
   border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  height: 54px;
   justify-content: flex-start;
-  padding: 0 25px 0 55px;
+  padding: 0 var(--Space-600) 0 55px;
   cursor: pointer;
 }
 .menuIcon2 {
-  height: 11px;
   width: 15.3px;
   position: relative;
+  height: 11px;
 }
 .walletMenuWrapper {
   align-self: stretch;
-  height: 54px;
   border-radius: 0 28px 28px 0;
+  height: 54px;
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 25px 0 55px;
+  padding: 0 var(--Space-600) 0 55px;
   box-sizing: border-box;
   cursor: pointer;
 }
 .menuIcon3 {
-  height: 15.8px;
   width: 16px;
   position: relative;
+  height: 15.8px;
 }
 .menuLabel3 {
   align-self: stretch;
   width: 139px;
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
 }
 .transactionMenu {
   flex: 1;
@@ -108,7 +112,7 @@
   justify-content: flex-start;
   gap: 20px;
 }
-.b {
+.b1 {
   width: 14px;
   position: relative;
   letter-spacing: -0.43px;
@@ -126,10 +130,10 @@
   box-sizing: border-box;
 }
 .counter1 {
-  height: 20px;
   width: 21px;
   border-radius: var(--Corner-Full);
   background-color: #fff;
+  height: 20px;
   justify-content: center;
   padding: 4px 3px;
   text-align: center;
@@ -137,34 +141,34 @@
 }
 .transactionMenuWrapper {
   align-self: stretch;
-  height: 54px;
   border-radius: 0 28px 28px 0;
   background: linear-gradient(180.89deg, #fd749b, #281ac8);
+  height: 54px;
   justify-content: flex-start;
   padding: 0 var(--Space-600) 0 55px;
   cursor: pointer;
 }
 .menuIcon4 {
-  height: 17.3px;
   width: 10.3px;
   position: relative;
+  height: 17.3px;
 }
 .statisticMenuWrapper {
   align-self: stretch;
-  height: 54px;
   border-radius: 0 var(--Corner-Extra-large) var(--Corner-Extra-large) 0;
+  height: 54px;
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 25px 0 55px;
+  padding: 0 var(--Space-600) 0 55px;
   box-sizing: border-box;
 }
 .menuIcon5 {
-  height: 13.8px;
   width: 16px;
+  height: 13.8px;
 }
 .menuIcon5,
 .referral {
@@ -179,7 +183,7 @@
   justify-content: flex-start;
 }
 .bottomMenu {
-  padding: 76px 1px 76px 126px;
+  padding: 76px 0 76px 126px;
   gap: 29px;
   font-size: 14px;
 }
@@ -190,7 +194,7 @@
   box-sizing: border-box;
   overflow: hidden;
   flex-shrink: 0;
-  padding: 42px 14px 0 0;
+  padding: 42px var(--Space-400) 0 0;
   gap: var(--Space-300);
 }
 .date {
@@ -198,35 +202,24 @@
   line-height: 163.42%;
 }
 .tableColHeader1,
-.tableColHeader2 {
+.tableColHeader2,
+.tableColHeader3 {
+  width: 94px;
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.tableColHeader1 {
-  width: 94px;
   justify-content: center;
-  padding: 20px 0;
-  box-sizing: border-box;
-}
-.tableColHeader2 {
-  width: 100px;
 }
 .tableColHeader2,
-.tableColHeader3,
-.tableColHeader4 {
-  justify-content: center;
-  padding: 20px 0;
-  box-sizing: border-box;
+.tableColHeader3 {
+  width: 100px;
 }
 .tableColHeader3 {
   width: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 .tableColHeader4 {
   width: 64px;
+  justify-content: center;
 }
 .tableColHeader4,
 .tableColHeader7,
@@ -238,13 +231,11 @@
 .tableColHeader7 {
   width: 112px;
   justify-content: center;
-  padding: 20px 0;
-  box-sizing: border-box;
 }
 .tableRowHeader {
   align-self: stretch;
-  height: 65px;
   border-radius: 100px;
+  height: 65px;
   justify-content: space-between;
   gap: 0;
 }
@@ -256,6 +247,8 @@
   justify-content: flex-start;
   gap: 10px;
   z-index: 0;
+  text-align: left;
+  font-size: 12px;
 }
 .menuItem,
 .menuItem1,
@@ -266,9 +259,9 @@
 }
 .menuItem {
   align-self: stretch;
-  height: 27px;
   border-radius: 4px 4px 0 0;
   background: linear-gradient(179.72deg, #fd749b, #281ac8);
+  height: 27px;
   flex-direction: row;
   align-items: center;
   padding: 0 0 0 var(--Space-150);
@@ -279,8 +272,8 @@
 }
 .menuItem1 {
   align-self: stretch;
-  height: 27px;
   border-radius: 0 0 4px 4px;
+  height: 27px;
   overflow: hidden;
   flex-shrink: 0;
   flex-direction: row;
@@ -299,46 +292,34 @@
   flex-direction: column;
   align-items: flex-start;
   z-index: 1;
-  text-align: center;
-  font-size: 10px;
 }
 .buttonChild {
-  width: 134px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 100px;
   background: linear-gradient(178.18deg, #fd749b, #281ac8);
+  width: 134px;
   height: 42px;
-  display: none;
 }
 .viewMore {
-  height: 17px;
-  width: 91px;
-  position: relative;
-  font-size: 10px;
-  font-family: Poppins;
-  color: #fff;
-  text-align: center;
+  position: absolute;
+  top: 13px;
+  left: 23px;
   display: inline-block;
-  z-index: 1;
-}
-.button,
-.sectionFooter {
-  height: 42px;
-  display: flex;
-  flex-direction: row;
+  width: 91px;
+  height: 17px;
 }
 .button {
-  cursor: pointer;
-  border: 0;
-  padding: 13px 20px 12px 23px;
-  background-color: transparent;
   width: 134px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  box-sizing: border-box;
+  position: relative;
+  height: 42px;
 }
 .sectionFooter {
   width: 925px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   z-index: 2;
@@ -358,7 +339,7 @@
   box-sizing: border-box;
   overflow: hidden;
   justify-content: center;
-  padding: 21px 0 33px;
+  padding: 24px 0 36px;
   position: relative;
   gap: 46px;
 }
@@ -376,89 +357,42 @@
   gap: 40px;
   max-width: 1024px;
 }
-.body,
-.contentContainer {
-  flex: 1;
-  flex-direction: row;
-}
 .contentContainer {
   align-self: stretch;
+  flex: 1;
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-}
-.body {
-  width: 1500px;
-  text-align: left;
-  font-size: 12px;
-  color: #fff;
-  font-family: Poppins;
+  text-align: center;
+  font-size: 10px;
 }
 .body,
-.transaction,
 .transaction1 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.transaction1 {
-  height: 1190px;
+.body {
+  width: 1500px;
   flex: 1;
+  flex-direction: row;
+}
+.transaction1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1190px;
   flex-direction: column;
-  max-width: 100%;
 }
 .transaction {
+  width: 100%;
   position: relative;
   background-color: #1e0338;
-  width: 100%;
+  height: 1190px;
   overflow: hidden;
-  flex-direction: row;
-  line-height: normal;
-  letter-spacing: normal;
-}
-@media screen and (max-width: 1025px) {
-  .mainContent {
-    padding-top: 29px;
-    padding-bottom: 29px;
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 975px) {
-  .tableRowHeader {
-    height: auto;
-    flex-wrap: wrap;
-  }
-  .transactionWrapper {
-    padding-top: 20px;
-    padding-bottom: 21px;
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 725px) {
-  .mainContent,
-  .sideNav {
-    padding-top: 27px;
-    box-sizing: border-box;
-  }
-  .mainContent {
-    gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .overviewMenuWrapper,
-  .statisticMenuWrapper,
-  .tradeMenuWrapper,
-  .transactionMenuWrapper,
-  .walletMenuWrapper {
-    padding-left: 20px;
-    box-sizing: border-box;
-  }
-  .transactionWrapper {
-    gap: 23px;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-  }
+  text-align: left;
+  font-size: 12px;
+  color: #fff;
+  font-family: Poppins;
 }

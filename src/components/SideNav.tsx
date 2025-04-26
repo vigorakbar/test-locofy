@@ -1,4 +1,10 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import {
+  FunctionComponent,
+  useMemo,
+  type CSSProperties,
+  useCallback,
+} from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./SideNav.module.css";
 
 export type SideNavType = {
@@ -63,7 +69,7 @@ const SideNav: FunctionComponent<SideNavType> = ({
     };
   }, [overviewMenuWrapperBackground]);
 
-  const dividerSpacerStyle: CSSProperties = useMemo(() => {
+  const bStyle: CSSProperties = useMemo(() => {
     return {
       display: dividerSpacerDisplay,
       alignItems: dividerSpacerAlignItems,
@@ -94,7 +100,7 @@ const SideNav: FunctionComponent<SideNavType> = ({
     };
   }, [counterBackground, counterBackgroundColor]);
 
-  const bStyle: CSSProperties = useMemo(() => {
+  const b1Style: CSSProperties = useMemo(() => {
     return {
       color: bColor,
       background: bBackground,
@@ -103,10 +109,35 @@ const SideNav: FunctionComponent<SideNavType> = ({
     };
   }, [bColor, bBackground, bWebkitBackgroundClip, bWebkitTextFillColor]);
 
+  const navigate = useNavigate();
+
+  const onOverviewMenuWrapperClick = useCallback(() => {
+    const anchor = document.querySelector(
+      "[data-scroll-to='overviewMenuWrapper']"
+    );
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }, []);
+
+  const onTradeMenuWrapperClick = useCallback(() => {
+    navigate("/trade");
+  }, [navigate]);
+
+  const onWalletMenuWrapperClick = useCallback(() => {
+    navigate("/wallet");
+  }, [navigate]);
+
+  const onTransactionMenuWrapperClick = useCallback(() => {
+    navigate("/transaction");
+  }, [navigate]);
+
   return (
     <div className={[styles.sideNav, className].join(" ")} style={sideNavStyle}>
       <div
         className={styles.overviewMenuWrapper}
+        data-scroll-to="overviewMenuWrapper"
+        onClick={onOverviewMenuWrapperClick}
         style={overviewMenuWrapperStyle}
       >
         <div className={styles.overviewMenu}>
@@ -114,18 +145,25 @@ const SideNav: FunctionComponent<SideNavType> = ({
           <div className={styles.menuLabel}>Overview</div>
         </div>
       </div>
-      <div className={styles.tradeMenuWrapper}>
+      <div
+        className={styles.tradeMenuWrapper}
+        onClick={onTradeMenuWrapperClick}
+      >
         <div className={styles.overviewMenu}>
           <img className={styles.menuIcon1} alt="" src={menuIcon1} />
           <div className={styles.menuLabel}>Trade</div>
         </div>
         <div className={styles.counter}>
-          <b className={styles.dividerSpacer} style={dividerSpacerStyle}>
+          <b className={styles.b} style={bStyle}>
             19
           </b>
         </div>
       </div>
-      <div className={styles.walletMenuWrapper} style={walletMenuWrapperStyle}>
+      <div
+        className={styles.walletMenuWrapper}
+        onClick={onWalletMenuWrapperClick}
+        style={walletMenuWrapperStyle}
+      >
         <div className={styles.overviewMenu}>
           <img className={styles.menuIcon2} alt="" src={menuIcon2} />
           <div className={styles.menuLabel}>Wallet</div>
@@ -133,6 +171,7 @@ const SideNav: FunctionComponent<SideNavType> = ({
       </div>
       <div
         className={styles.transactionMenuWrapper}
+        onClick={onTransactionMenuWrapperClick}
         style={transactionMenuWrapperStyle}
       >
         <div className={styles.transactionMenu}>
@@ -140,7 +179,7 @@ const SideNav: FunctionComponent<SideNavType> = ({
           <div className={styles.menuLabel3}>Transactions</div>
         </div>
         <div className={styles.counter} style={counterStyle}>
-          <b className={styles.dividerSpacer} style={bStyle}>
+          <b className={styles.b} style={b1Style}>
             19
           </b>
         </div>

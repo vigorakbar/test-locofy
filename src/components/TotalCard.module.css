@@ -2,20 +2,21 @@
   align-self: stretch;
   position: relative;
   line-height: 49.5px;
+  display: inline-block;
   background: linear-gradient(144.12deg, #fc58b3, #feae68);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  height: 20.9px;
+  flex-shrink: 0;
   z-index: 0;
 }
 .totalGraphicChild {
   width: 114px;
-  height: 100%;
   position: absolute;
   margin: 0 !important;
   top: 0;
-  bottom: 0;
   left: 0;
-  max-height: 100%;
+  height: 124px;
   z-index: 1;
 }
 .totalGraphic,
@@ -30,14 +31,14 @@
   flex-shrink: 0;
   flex-direction: column;
   align-items: flex-start;
-  padding: 44px 22px 30px;
+  padding: 44px 22px;
   box-sizing: border-box;
   position: relative;
   gap: 10px;
 }
 .totalNumber {
-  height: 124px;
   width: 114px;
+  height: 124px;
   flex-direction: row;
   align-items: center;
 }
@@ -45,60 +46,56 @@
   align-self: stretch;
   position: relative;
 }
-.statNumberContainer {
-  height: 16px;
-  width: 35px;
-  position: relative;
+.div,
+.path2Icon {
+  position: absolute;
+}
+.div {
+  width: 83.33%;
+  top: calc(50% - 8px);
+  left: 0;
   line-height: 30px;
   display: inline-block;
-  flex-shrink: 0;
+  height: 16px;
 }
 .path2Icon {
-  width: 7px;
-  height: 4px;
-  position: relative;
+  height: 25%;
+  width: 16.67%;
+  top: 50%;
+  right: 0;
+  bottom: 25%;
+  left: 83.33%;
   border-radius: 0.5px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
   object-fit: contain;
-  flex-shrink: 0;
 }
-.number,
-.numberWrapper,
-.path2Wrapper,
-.statNumberContainerItemParent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 8px 0 0;
-}
-.number,
-.numberWrapper,
-.statNumberContainerItemParent {
-  flex-direction: row;
-  padding: 0;
-}
-.number,
-.numberWrapper {
-  padding: 0 7px 0 0;
-}
-.numberWrapper {
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 0 3px;
+.number {
+  position: absolute;
+  width: 33.87%;
+  top: calc(50% - 6px);
+  right: 66.13%;
+  left: 0;
+  height: 16px;
 }
 .graphIcon {
-  height: 26px;
-  width: 63px;
-  position: relative;
+  position: absolute;
+  height: 100%;
+  width: 50.81%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 49.19%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  mix-blend-mode: normal;
 }
 .stats {
   width: 124px;
+  position: relative;
   height: 26px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: 19px;
   font-size: 12px;
   color: #1cd1a1;
 }
@@ -114,25 +111,25 @@
   text-align: left;
   font-size: 16px;
 }
-.cardPopoverButton {
+.totalCardChild {
   align-self: stretch;
   width: 16px;
   max-height: 100%;
 }
 .totalCard {
-  height: 164px;
   width: 308px;
   border-radius: 10px;
   background-color: #1e0338;
   border: 2px solid #f0f0f0;
   box-sizing: border-box;
+  height: 164px;
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 17px 18px;
+  padding: 20px;
   z-index: 0;
   text-align: center;
   font-size: 12px;

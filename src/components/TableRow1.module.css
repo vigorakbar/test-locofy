@@ -1,4 +1,4 @@
-.firstRowData {
+.div {
   position: relative;
 }
 .tableCol1 {
@@ -7,10 +7,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
-  box-sizing: border-box;
 }
-.secondRowData {
+.div1 {
   position: relative;
   line-height: 180%;
 }
@@ -20,12 +18,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
-  box-sizing: border-box;
 }
 .tableCol3 {
   width: 60px;
-  max-height: 100%;
+  height: 16px;
 }
 .bitcoin {
   position: relative;
@@ -38,8 +34,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
-  box-sizing: border-box;
 }
 .tableCol5 {
   width: 60px;
@@ -56,9 +50,9 @@
   justify-content: center;
 }
 .tableButton {
-  height: 27px;
   border-radius: 215px;
   background-color: #5df888;
+  height: 27px;
   padding: 5px 8px;
   box-sizing: border-box;
   min-width: 91px;
@@ -69,14 +63,14 @@
 }
 .tableCol8 {
   width: 64px;
-  max-height: 100%;
+  height: 3.7px;
 }
 .tableRow1 {
   align-self: stretch;
-  height: 65px;
   border-radius: 100px;
   border: 2px solid #f0f0f0;
   box-sizing: border-box;
+  height: 65px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -86,10 +80,4 @@
   font-size: 12px;
   color: #fff;
   font-family: Poppins;
-}
-@media screen and (max-width: 750px) {
-  .tableRow1 {
-    height: auto;
-    flex-wrap: wrap;
-  }
 }
